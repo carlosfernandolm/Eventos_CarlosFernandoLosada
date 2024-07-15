@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Aplicación de Notas</h1>
+        <div class="note-inputs">
+            <input type="text" id="noteTitle" placeholder="Título de la nota">
+            <textarea id="noteText" placeholder="Texto de la nota"></textarea>
+            <button id="saveNote">Guardar Nota</button>
+            <button id="clearFields">Limpiar Campos</button>
+        </div>
+        <div class="filters">
+            <input type="text" id="searchText" placeholder="Buscar texto">
+            <label for="filterCompleted">Mostrar realizadas</label>
+            <input type="checkbox" id="filterCompleted">
+        </div>
+        <div id="notesContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
